@@ -9,3 +9,8 @@ body{
 h2{
     color: gold;
 }
+
+img{
+    width: 400px;
+    height: 350px;
+}

@@ -2,58 +2,57 @@
  * Created by rashaadswanson on 1/14/15.
  */
 
-var makes = {
-  key1:  "Chevy",
-  key2: "GM",
-  key3:"Fiat",
-  key4:  "Webville Motors",
-  key5:  "Tucker"
-};
-
-var models = {
-    key1:  "Chevy",
-    key2: "GM",
-    key3:"Fiat",
-    key4:  "Webville Motors",
-    key5:  "Tucker"
-};
-
-
-var years = {
-    key1:  1955,
-    key2: 1957,
-    key3:1948,
-    key4: 1954,
-    key5:  1961
-};
 
 
 
-var colors ={
-    key1:  "Chevy",
-    key2: "GM",
-    key3:"Fiat",
-    key4:  "Webville Motors",
-    key5:  "Tucker"
+
+    var makes = {
+        key1:  "Chevy",
+        key2: "GM",
+        key3:"Fiat",
+        key4:  "Webville Motors",
+        key5:  "Tucker"
+    };
+
+    var models = {
+        key1:  "Cadillac",
+        key2: "500",
+        key3:"Belair",
+        key4:  "Taxi",
+        key5:  "Torpedo"
+    };
+
+
+    var years = {
+        key1:  1955,
+        key2: 1957,
+        key3:1948,
+        key4: 1954,
+        key5:  1961
+    };
 
 
 
-};
+    var colors = {
+        key1:  "red",
+        key2: "blue",
+        key3:"tan",
+        key4:  "yellow",
+        key5:  "white"
+    };
 
 
-var convertible = {
-    key1: "true",
-    key2: "false"
+    var convertible = {
+        key1: "true",
+        key2: "false"
 
-};
+    };
 
-
-function makeCar() {
-
-    var rand1 = Math.floor(Math.random() * makes.length)+1;
-    var rand2 = Math.floor(Math.random() * models.length)+1;
-    var rand3 = Math.floor(Math.random() * years.length)+1;
-    var rand4 = Math.floor(Math.random() * colors.length)+1;
+    function makeCar() {
+    var rand1 = Math.floor(Math.random() * Object.keys(makes).length)+1;
+    var rand2 = Math.floor(Math.random() * Object.keys(models).length)+1;
+    var rand3 = Math.floor(Math.random() * Object.keys(years).length)+1;
+    var rand4 = Math.floor(Math.random() * Object.keys(colors).length)+1;
     var rand5 = Math.floor(Math.random() * 5) + 1;
     var rand6 = Math.floor(Math.random() * 2);
 
@@ -66,12 +65,12 @@ function makeCar() {
 
 
     var car = {
-    make: makes[rand1],
-    model: models[rand2],
-    year: years[rand3],
-    color: colors[rand4],
-    passengers: rand5,
-    convertible: convertible[rand6],
+    make: makes[randomKey1],
+    model: models[randomKey2],
+    year: years[randomKey3],
+    color: colors[randomKey4],
+    passengers: randomKey5,
+    convertible: convertible[randomKey6],
     mileage:0
 };
     return car;
@@ -82,22 +81,10 @@ function makeCar() {
 }
 
 function displayCar(car){
-    alert("Congratulations Your new car is a: " + car.year + "" + car.make + "" + car.model);
-    document.write("<br>"+ "Congratulations Your new car is a: " + car.year + " " + car.make+ "" + car.model);
+   /* alert("Congratulations Your new car is a: " + car.year + " " + car.make + " " + car.model);
+    document.write("<br>","Congratulations Your new car is a: " + car.year + " " + car.make+ "" + car.model);
     console.log("Congratulations Your new car is a: " + car.year + "" + car.make + "" + car.model);
-
-    console.log(car.make+" came from this array of choices "+makes);
-    console.log(car.model+" came from this array of choices "+models);
-    console.log(car.year+" came from this array of choices "+years);
-    console.log(car.convertible+" came from this array of choices "+colors);
-    console.log(car.make+" came from this array of choices "+convertible);
-
-
-    document.write("<br>"+ car.make+" came from this array of choices "+makes);
-    document.write("<br>"+ car.model+" came from this array of choices "+models);
-    document.write("<br>"+ car.year+" came from this array of choices "+years);
-    document.write("<br>"+car.convertible+" came from this array of choices "+colors);
-    document.write("<br>"+car.make+" came from this array of choices "+convertible);
+*/
 
 
     console.log("MAKES has this many: "+ Object.keys(makes).length);
@@ -112,9 +99,9 @@ function displayCar(car){
     console.log("COLORS has this many: "+ Object.keys(colors).length);
     document.write("<br>"+"COLORS has this many: "+ Object.keys(colors).length);
 
-    console.log("CONVERTIBLE has this many: "+ Object.keys(makes).length);
-    document.write("<br>"+"CONVERTIBLE has this many: "+ Object.keys(makes).length);
-}
+    console.log("CONVERTIBLE has this many: "+ Object.keys(convertible).length);
+    document.write("<br>"+"CONVERTIBLE has this many: "+ Object.keys(convertible).length);
+};
 
 var carToSell = makeCar();
 displayCar(carToSell);
