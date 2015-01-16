@@ -23,20 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Car-o-matic_Rashaad.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Car-o-matic_Rashaad.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CARS/js/Car-o-matic_Rashaad.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="1155">
+            <state vertical-scroll-proportion="0.91584855" vertical-offset="337" max-vertical-offset="1155">
               <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="car-o-matic_Rashaad.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="car-o-matic_Rashaad.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CARS/car-o-matic_Rashaad.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32656023" vertical-offset="0" max-vertical-offset="689">
+            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="315">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
@@ -457,6 +457,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CARS/car-o-matic_Rashaad.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="315">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PHRASES/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
@@ -467,16 +475,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CARS/js/Car-o-matic_Rashaad.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="1155">
+        <state vertical-scroll-proportion="0.91584855" vertical-offset="337" max-vertical-offset="1155">
           <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CARS/car-o-matic_Rashaad.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32656023" vertical-offset="0" max-vertical-offset="689">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
