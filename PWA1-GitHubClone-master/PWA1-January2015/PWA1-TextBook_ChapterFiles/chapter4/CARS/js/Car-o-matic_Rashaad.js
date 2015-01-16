@@ -2,22 +2,70 @@
  * Created by rashaadswanson on 1/14/15.
  */
 
-var makes = ["Chevy","GM", "Fiat","Webville Motors","Tucker"];
-var models = ["Cadillac","500","Bel-Air","Taxi","Torpedo"];
-var years = [1955,1957,1948,1954,1961];
-var colors =["red","blue","tan","yellow","white"];
-var convertible = [true, false];
+var makes = {
+  key1:  "Chevy",
+  key2: "GM",
+  key3:"Fiat",
+  key4:  "Webville Motors",
+  key5:  "Tucker"
+};
+
+var models = {
+    key1:  "Chevy",
+    key2: "GM",
+    key3:"Fiat",
+    key4:  "Webville Motors",
+    key5:  "Tucker"
+};
+
+
+var years = {
+    key1:  1955,
+    key2: 1957,
+    key3:1948,
+    key4: 1954,
+    key5:  1961
+};
+
+
+
+var colors ={
+    key1:  "Chevy",
+    key2: "GM",
+    key3:"Fiat",
+    key4:  "Webville Motors",
+    key5:  "Tucker"
+
+
+
+};
+
+
+var convertible = {
+    key1: "true",
+    key2: "false"
+
+};
+
 
 function makeCar() {
 
-    var rand1 = Math.floor(Math.random() * makes.length);
-    var rand2 = Math.floor(Math.random() * models.length);
-    var rand3 = Math.floor(Math.random() * years.length);
-    var rand4 = Math.floor(Math.random() * colors.length);
+    var rand1 = Math.floor(Math.random() * makes.length)+1;
+    var rand2 = Math.floor(Math.random() * models.length)+1;
+    var rand3 = Math.floor(Math.random() * years.length)+1;
+    var rand4 = Math.floor(Math.random() * colors.length)+1;
     var rand5 = Math.floor(Math.random() * 5) + 1;
     var rand6 = Math.floor(Math.random() * 2);
 
-var car = {
+    var randomKey1= "key"+rand1;
+    var randomKey2= "key"+rand2;
+    var randomKey3= "key"+rand3;
+    var randomKey4= "key"+rand4;
+    var randomKey5= "key"+rand5;
+    var randomKey6= "key"+rand6;
+
+
+    var car = {
     make: makes[rand1],
     model: models[rand2],
     year: years[rand3],
@@ -27,6 +75,7 @@ var car = {
     mileage:0
 };
     return car;
+
 
 
 
