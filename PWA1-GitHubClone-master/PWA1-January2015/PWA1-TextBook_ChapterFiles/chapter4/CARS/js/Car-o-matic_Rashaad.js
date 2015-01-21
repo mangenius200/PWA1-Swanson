@@ -64,7 +64,7 @@
     var randomKey6= "key"+rand6;
 
 
-    var car = {
+    var car= {
     make: makes[randomKey1],
     model: models[randomKey2],
     year: years[randomKey3],
