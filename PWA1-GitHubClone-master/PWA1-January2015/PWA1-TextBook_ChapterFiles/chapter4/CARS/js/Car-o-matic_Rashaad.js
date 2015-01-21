@@ -86,7 +86,7 @@ function displayCar(car) {
      console.log("Congratulations Your new car is a: " + car.year + "" + car.make + "" + car.model);
      */
 
-    /*
+
      console.log("MAKES has this many: "+ Object.keys(makes).length);
      document.write("<br>"+"MAKES has this many: "+ Object.keys(makes).length);
 
@@ -106,13 +106,8 @@ function displayCar(car) {
      var carToSell = makeCar();
      displayCar(carToSell);
 
-     */
-}
-    for (var key in car) {
 
-        document.write("<br>","for in Loop Results:", key, car[key], " ");
-        console.log("For in Loop Results:", key, car[key]);
-    }
+
 
 
 
