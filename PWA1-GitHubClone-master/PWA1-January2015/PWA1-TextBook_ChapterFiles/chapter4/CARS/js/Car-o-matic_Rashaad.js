@@ -80,28 +80,39 @@
 
 }
 
-function displayCar(car){
-   /* alert("Congratulations Your new car is a: " + car.year + " " + car.make + " " + car.model);
-    document.write("<br>","Congratulations Your new car is a: " + car.year + " " + car.make+ "" + car.model);
-    console.log("Congratulations Your new car is a: " + car.year + "" + car.make + "" + car.model);
-*/
+function displayCar(car) {
+    /* alert("Congratulations Your new car is a: " + car.year + " " + car.make + " " + car.model);
+     document.write("<br>","Congratulations Your new car is a: " + car.year + " " + car.make+ "" + car.model);
+     console.log("Congratulations Your new car is a: " + car.year + "" + car.make + "" + car.model);
+     */
+
+    /*
+     console.log("MAKES has this many: "+ Object.keys(makes).length);
+     document.write("<br>"+"MAKES has this many: "+ Object.keys(makes).length);
+
+     console.log("MODELS has this many: "+ Object.keys(models).length);
+     document.write("<br>"+"MODELS has this many: "+ Object.keys(models).length);
+
+     console.log("YEARS has this many: "+ Object.keys(years).length);
+     document.write("<br>"+"YEARS has this many: "+ Object.keys(years).length);
+
+     console.log("COLORS has this many: "+ Object.keys(colors).length);
+     document.write("<br>"+"COLORS has this many: "+ Object.keys(colors).length);
+
+     console.log("CONVERTIBLE has this many: "+ Object.keys(convertible).length);
+     document.write("<br>"+"CONVERTIBLE has this many: "+ Object.keys(convertible).length);
+     };
+
+     var carToSell = makeCar();
+     displayCar(carToSell);
+
+     */
+}
+    for (var key in car) {
+
+        document.write("<br>","for in Loop Results:", key, car[key], " ");
+        console.log("For in Loop Results:", key, car[key]);
+    }
 
 
-    console.log("MAKES has this many: "+ Object.keys(makes).length);
-    document.write("<br>"+"MAKES has this many: "+ Object.keys(makes).length);
 
-    console.log("MODELS has this many: "+ Object.keys(models).length);
-    document.write("<br>"+"MODELS has this many: "+ Object.keys(models).length);
-
-    console.log("YEARS has this many: "+ Object.keys(years).length);
-    document.write("<br>"+"YEARS has this many: "+ Object.keys(years).length);
-
-    console.log("COLORS has this many: "+ Object.keys(colors).length);
-    document.write("<br>"+"COLORS has this many: "+ Object.keys(colors).length);
-
-    console.log("CONVERTIBLE has this many: "+ Object.keys(convertible).length);
-    document.write("<br>"+"CONVERTIBLE has this many: "+ Object.keys(convertible).length);
-};
-
-var carToSell = makeCar();
-displayCar(carToSell);

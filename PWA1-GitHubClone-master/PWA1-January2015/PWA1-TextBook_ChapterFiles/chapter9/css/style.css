@@ -1,0 +1,15 @@
+body { margin: 20px;
+background-color:black;
+}
+body img {display:block;
+      margin: auto;
+    padding: 0px 0px 30px 0px;
+
+
+
+}  /* added in second step */
+h1{
+
+    color:gold;;
+    text-align: center;
+}
